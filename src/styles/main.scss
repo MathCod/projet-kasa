@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 30px;
+
+  &__logo {
+    width: 150px; // Ajuste la taille selon tes besoins
+    @media (max-width: 768px) {
+      width: 110px; // Plus petit sur mobile
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 30px; // Espace entre Accueil et A Propos
+
+    &-link {
+      text-decoration: none;
+      color: #FF6060; // Le rouge Kasa
+      font-size: 18px;
+      font-weight: 500;
+
+      &.active {
+        text-decoration: underline; // Souligne le lien de la page active
+      }
+
+      @media (max-width: 768px) {
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
