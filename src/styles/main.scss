@@ -1,4 +1,9 @@
-$primary-color: #FF6060;
+// On importe les morceaux dans l'ordre logique
+@use 'variables';
+@use 'base';
+@use 'header';
+@use 'footer';
+@use 'banner';
 
 #root {
   display: flex;
@@ -8,39 +13,4 @@ $primary-color: #FF6060;
 
 main {
   flex: 1; // Dit au contenu principal de "pousser" le footer vers le bas
-}
-
-body {
-  font-family: sans-serif;
-  margin: 0;
-}
-
-.header, main {
-  margin: 0 5%;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  
-  &__logo { width: 150px; }
-  
-  nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    &.active { text-decoration: underline; }
-  }
-}
-
-.footer {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  margin-top: 100px;
-
-  &__logo {
-    width: 100%;
-  }
 }

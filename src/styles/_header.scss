@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  
+  &__logo { width: 150px; }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    &.active { text-decoration: underline; }
+  }
+}
