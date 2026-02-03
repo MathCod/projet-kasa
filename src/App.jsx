@@ -7,19 +7,19 @@ import Error from './pages/Error'
 import Footer from './components/Footer'
 
 function App() {
-  
+
   return (
     <Router>
-        <Header /> {/* Le header sera présent sur toutes les pages */}
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/housing/:id" element={<Housing />} />
-            <Route path="*" element={<Error />} />
-          </Routes>
-        </main>
-      <Footer /> {/* Le footer sera présent sur toutes les pages */}
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/housing/:id" element={<Housing />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </main>
+      <Footer />
     </Router>
   )
 }
