@@ -1,0 +1,40 @@
+.banner {
+  position: relative;
+  height: 223px;
+  border-radius: 25px;
+  overflow: hidden; // Pour que l'image respecte les bords arrondis
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // L'image remplit la boîte sans se déformer
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); // Assombrit l'image pour lire le texte
+  }
+
+  &__text {
+    position: absolute;
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 20px;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+      text-align: left;
+      left: 20px;
+    }
+  }
+}
