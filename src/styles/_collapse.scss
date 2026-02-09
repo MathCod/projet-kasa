@@ -1,0 +1,41 @@
+.collapse {
+  margin-bottom: 30px;
+  margin: 20px 150px;
+  &__header {
+    background-color: #FF6060;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 2px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 500 bold;
+  }
+
+  &__arrow {
+    transition: transform 0.3s ease;
+    &.opened {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__content {
+    background-color: #F6F6F6;
+    color: inerit;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    margin-top: -5px;
+    display: none;
+    
+    &.opened {
+      display: block;
+    }
+  }
+}
