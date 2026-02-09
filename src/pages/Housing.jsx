@@ -1,6 +1,6 @@
 import { useParams, Navigate } from 'react-router-dom'
 import logements from "../data/logements.json"
-
+import Slideshow from '../components/Slideshow'
 
 function Housing() {
   const { id } = useParams()
@@ -12,10 +12,12 @@ function Housing() {
 
   return (
     <div className="housing">
-      <h1>{logement.title}</h1>
-      <p>{logement.location}</p>
-      
-      
+      <Slideshow pictures={logement.pictures} />
+      <div className="housing__content">
+        <h1>{logement.title}</h1>
+        <p>{logement.location}</p>
+
+      </div>
     </div>
   )
 }
