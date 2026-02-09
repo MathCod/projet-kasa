@@ -4,11 +4,12 @@
   align-items: center;
   padding: 20px 0;
   
-  &__logo { width: 150px; }
+  &__logo { width: 200px; }
   
   nav a {
-    margin-left: 20px;
+    margin-left: 60px;
     text-decoration: none;
+    font-size: 20px;
     color: inherit;
     &.active { text-decoration: underline; }
   }
