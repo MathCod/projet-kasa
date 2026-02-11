@@ -1,5 +1,7 @@
+@use 'variables' as *;
+
 body {
-  font-family: sans-serif;
+  font-family: $font-family;
   margin: 0;
 }
 

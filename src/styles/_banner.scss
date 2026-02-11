@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .banner {
   position: relative;
   height: 223px;
@@ -25,7 +27,7 @@
 
   &__text {
     position: absolute;
-    color: white;
+    color: $white;
     font-size: 48px;
     font-weight: 500;
     text-align: center;
