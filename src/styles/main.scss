@@ -1,4 +1,3 @@
-// On importe les morceaux dans l'ordre logique
 @use 'variables';
 @use 'base';
 @use 'header';
@@ -7,13 +6,14 @@
 @use 'banner';
 @use 'collapse';
 @use 'slideshow';
+@use 'housing';
 
 #root {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; // Force l'app à faire au moins la taille de l'écran
+  min-height: 100vh;
 }
 
 main {
-  flex: 1; // Dit au contenu principal de "pousser" le footer vers le bas
+  flex: 1;
 }

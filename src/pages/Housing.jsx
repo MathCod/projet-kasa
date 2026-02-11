@@ -10,7 +10,7 @@ function Housing() {
   const logement = logements.find((item) => item.id === id)
 
   if (!logement) return <Navigate to="/error" />
-  
+
   const range = [1, 2, 3, 4, 5]
 
   return (
