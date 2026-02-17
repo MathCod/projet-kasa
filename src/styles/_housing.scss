@@ -34,6 +34,15 @@
     }
   }
 
+  &__host-container {
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      gap: 10px;
+    }
+  }
+
   &__host {
     display: flex;
     align-items: center;
