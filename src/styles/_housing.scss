@@ -1,9 +1,11 @@
+@use 'variables' as v;
+
 .housing {
   &__header {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    color: #FF6060;
+    color: v.$primary-color;
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -15,7 +17,7 @@
   }
 
   &__location {
-    color: black;
+    color: v.$black;
     margin: 5px 0;
   }
 
@@ -24,8 +26,8 @@
     gap: 10px;
     margin-top: 10px;
     .tag {
-      background: #FF6060;
-      color: white;
+      background: v.$primary-color;
+      color: v.$white;
       padding: 5px 20px;
       border-radius: 10px;
       font-size: 14px;

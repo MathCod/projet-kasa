@@ -1,7 +1,7 @@
-@use 'variables' as *;
+@use 'variables' as v;
 
 body {
-  font-family: $font-family;
+  font-family: v.$font-family;
   margin: 0;
 }
 

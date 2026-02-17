@@ -1,9 +1,9 @@
-@use 'variables' as *;
+@use 'variables' as v;
 
 .footer {
   width: 100%; // Il prend toute la largeur
-  background-color: $black;
-  color: $white;
+  background-color: v.$black;
+  color: v.$white;
   display: flex;
   flex-direction: column;
   align-items: center;

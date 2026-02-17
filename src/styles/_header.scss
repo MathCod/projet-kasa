@@ -1,3 +1,5 @@
+@use 'variables' as v;
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -10,7 +12,7 @@
     margin-left: 60px;
     text-decoration: none;
     font-size: 20px;
-    color: inherit;
+    color: v.$black;
     &.active { text-decoration: underline; }
   }
 }

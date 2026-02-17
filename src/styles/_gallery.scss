@@ -1,7 +1,7 @@
-@use 'variables' as *;
+@use 'variables' as v;
 
 .gallery {
-  background-color: $gray;
+  background-color: v.$gray;
   border-radius: 25px;
   padding: 50px;
   display: grid;
@@ -40,7 +40,7 @@
     position: absolute;
     bottom: 20px;
     left: 20px;
-    color: $white;
+    color: v.$white;
     font-size: 18px;
     font-weight: 500;
   }
