@@ -5,8 +5,6 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Housing from './pages/Housing'
 import Error from './pages/Error'
-import Header from './components/Header'
-import Footer from './components/Footer'
 
 function Loading() {
   return <p>Chargement en cours...</p>
@@ -17,13 +15,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <Layout />,
     HydrateFallback: Loading,
-    errorElement: (
-      <>
-        <Header />
-        <main><Error /></main>
-        <Footer />
-      </>
-    ),
+    errorElement:<Error />,
     children: [
       {
         index: true,
