@@ -1,15 +1,11 @@
-import { useParams, Navigate } from 'react-router-dom'
-import logements from "../data/logements.json"
+import { useLoaderData } from 'react-router-dom'
 import Slideshow from '../components/Slideshow'
 import Collapse from '../components/Collapse'
 import greyStar from '../assets/star-grey.svg'
 import redStar from '../assets/star-red.svg'
 
 function Housing() {
-  const { id } = useParams()
-  const logement = logements.find((item) => item.id === id)
-
-  if (!logement) return <Navigate to="/error" />
+  const logement = useLoaderData()
 
   const range = [1, 2, 3, 4, 5]
 

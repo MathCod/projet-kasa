@@ -1,9 +1,10 @@
+import { useLoaderData } from "react-router-dom"
 import Banner from "../components/Banner"
 import HomeBanner from "../assets/home-banner.png"
 import Card from "../components/Card"
-import logements from "../data/logements.json"
 
 function Home() {
+  const logements = useLoaderData()
 
   return (
     <div className="home">
