@@ -1,4 +1,18 @@
+/**
+ * @file Gestion des cartes de chaque logement sur la page d'accueil
+ * @author Mathias
+ */
 import { Link } from 'react-router-dom'
+
+/**
+ * Composant Card - Affiche une vignette de logement cliquable pour la galerie
+ * 
+ * @param {Object} props
+ * @param {string} props.id - L'identifiant unique du logement (pour le lien)
+ * @param {string} props.title - Le titre du logement
+ * @param {string} props.cover - URL de l'image de couverture
+ * @returns {JSX.Element}
+ */
 
 function Card({ id, title, cover }) {
   return (

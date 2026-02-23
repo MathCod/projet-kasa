@@ -1,5 +1,19 @@
+/**
+ * @file Gestion des accordéons pour les pages "À Propos" et "Logement"
+ * @author Mathias
+ */
+
 import { useState } from 'react'
 import arrow from '../assets/arrow.svg'
+
+/**
+ * Composant Collapse - Affiche un élément repliable (accordéon)
+ * 
+ * @param {Object} props
+ * @param {string} props.title - Le titre affiché sur la barre du collapse
+ * @param {string|React.ReactNode} props.content - Le contenu (texte ou JSX)
+ * @returns {JSX.Element}
+ */
 
 function Collapse({ title, content }) {
   // Crée un état "ouvert/fermé" par défaut fermé (false)
