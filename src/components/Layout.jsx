@@ -7,12 +7,11 @@ function Layout() {
     <>
       <Header />
       <main>
-        {/* L'Outlet est l'endroit où les pages vont s'afficher */}
         <Outlet /> 
       </main>
       <Footer />
     </>
-  );
+  )
 }
 
 export default Layout

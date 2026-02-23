@@ -5,12 +5,12 @@
   border-radius: 25px;
   padding: 50px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); // 3 colonnes sur desktop
+  grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr; // 1 colonne sur mobile
-    background-color: transparent; // Souvent demandé sur mobile
+    grid-template-columns: 1fr;
+    background-color: transparent;
     padding: 0;
   }
 }
@@ -20,7 +20,7 @@
   height: 340px;
   border-radius: 10px;
   overflow: hidden;
-  display: block; // Pour que le Link prenne toute la place
+  display: block;
 
   &__img {
     width: 100%;

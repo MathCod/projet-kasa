@@ -20,7 +20,6 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
-        // Optionnel ici : loader pour charger les logements de la Home
         loader: () => {
           return dataLogements
           }
@@ -32,14 +31,13 @@ const router = createBrowserRouter([
       {
         path: "housing/:id",
         element: <Housing />,
-        // On récupère les données AVANT d'afficher la page Housing
         loader: async ({ params }) => {
-          const housing = dataLogements.find(h => h.id === params.id);
+          const housing = dataLogements.find(h => h.id === params.id)
           
           if (!housing) {
-            throw new Response("Not Found", { status: 404 });
+            throw new Response("Not Found", { status: 404 })
           }
-          return housing;
+          return housing
         }
       },
       {

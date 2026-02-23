@@ -2,7 +2,7 @@ import { useState } from 'react'
 import arrow from '../assets/arrow.svg'
 
 function Collapse({ title, content }) {
-  // On crée un état "ouvert/fermé", par défaut c'est fermé (false)
+  // Crée un état "ouvert/fermé" par défaut fermé (false)
   const [isOpen, setIsOpen] = useState(false)
 
   return (
