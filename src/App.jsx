@@ -5,6 +5,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './components/Layout'
 import dataLogements from "./data/logements.json"
+import dataAbout from "./data/about.json"
 import Home from './pages/Home'
 import About from './pages/About'
 import Housing from './pages/Housing'
@@ -38,6 +39,9 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+        loader: () => {
+          return dataAbout
+        }
       },
       {
         path: "housing/:id",
