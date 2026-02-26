@@ -50,6 +50,10 @@ src/
 ├── App.jsx        # Configuration du Router et du Layout
 └── main.jsx       # Point d'entrée de l'application
 ```
+
+## Déploiement
+Mon site est déployé sur [Vercel](https://projet-kasa-lilac.vercel.app/) n'hésitez pas !
+
 ## ✒️ Auteur
 Mathias - Développement Front-End Junior<br>
 Lien vers mon profil [GitHub](https://github.com/MathCod)
