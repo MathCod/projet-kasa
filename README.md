@@ -1,16 +1,55 @@
-# React + Vite
+# Kasa - Application de location immobilière
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kasa est une application web de location immobilière développée avec **React**. Ce projet a été réalisé dans le cadre du parcours "Développeur Web bac+2" d'OpenClassrooms. L'objectif était de moderniser une ancienne plateforme (jQuery) en utilisant une architecture de composants moderne et performante.
 
-Currently, two official plugins are available:
+## 🚀 Fonctionnalités
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Galerie dynamique** : Affichage des logements à partir d'un fichier JSON.
+- **Routage complexe** : Gestion des pages Accueil, À Propos, Fiche Logement et Erreur 404 via React Router.
+- **Slideshow** : Carrousel d'images avec navigation (clavier et souris) et boucle infinie.
+- **Accordéons (Collapse)** : Composants réutilisables pour les descriptions et équipements.
+- **Responsive Design** : Interface entièrement adaptée du mobile au desktop.
+- **Loaders & Data Router** : Gestion optimisée du chargement des données.
 
-## React Compiler
+## 🛠️ Technologies utilisées
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** (v18+)
+- **Vite** (Outil de build)
+- **React Router** (v6.4+ - Data Router)
+- **Sass** (Préprocesseur CSS pour un style modulaire)
+- **JSDoc** (Documentation du code)
 
-## Expanding the ESLint configuration
+## 📦 Installation et lancement
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Cloner le projet**<br>
+   Sur bash :<br>
+   `git clone https://github.com/MathCod/projet-kasa.git`
+
+2. **Installer les dépendances**
+
+    `npm install`
+
+3. **Lancer le serveur de développement**
+
+    `npm run dev`
+
+L'application sera disponible à l'adresse : http://localhost:5173
+
+4. **Build pour la production**
+
+    `npm run build`
+
+## 📂 Structure du projet
+```
+src/
+├── assets/        # Images, logos et icônes
+├── components/    # Composants réutilisables (Header, Footer, Collapse...)
+├── data/          # Fichier JSON des logements
+├── pages/         # Composants pages (Home, About, Housing, Error)
+├── styles/        # Fichiers SASS (Partials et Main)
+├── App.jsx        # Configuration du Router et du Layout
+└── main.jsx       # Point d'entrée de l'application
+```
+## ✒️ Auteur
+Mathias - Développement Front-End Junior<br>
+Lien vers mon profil [GitHub](https://github.com/MathCod)
