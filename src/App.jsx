@@ -58,12 +58,14 @@ const router = createBrowserRouter([
           return housing
         }
       },
-      {
-        path: "*",
-        element: <Error />,
-      }
+      
     ]
+  },
+  {
+    path: "*",
+    element: <Error />,
   }
+
 ])
 
 /**
