@@ -6,9 +6,9 @@
   padding: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
-
+  gap: 40px;
   @media (max-width: 768px) {
+    gap: 15px;
     grid-template-columns: 1fr;
     background-color: transparent;
     padding: 0;
@@ -21,6 +21,9 @@
   border-radius: 10px;
   overflow: hidden;
   display: block;
+  @media (max-width: 768px) {
+      height: 250px;
+    }
 
   &__img {
     width: 100%;

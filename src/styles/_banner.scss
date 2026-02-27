@@ -3,12 +3,15 @@
 .banner {
   position: relative;
   height: 223px;
-  border-radius: 25px;
+  border-radius: 15px;
   overflow: hidden;
   margin: 30px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+      height: 100px;
+    }
 
   &__img {
     width: 100%;
