@@ -5,6 +5,9 @@
   height: 500px;
   border-radius: 25px;
   overflow: hidden;
+  @media (max-width: 768px) {
+    height: 280px;
+  }
 
   &__img {
     width: 100%;
